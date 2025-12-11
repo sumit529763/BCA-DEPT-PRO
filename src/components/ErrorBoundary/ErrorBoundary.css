@@ -1,0 +1,11 @@
+.eb-wrapper { padding: 28px; display:flex; justify-content:center; }
+.eb-card {
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  max-width: 760px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
+  color: #0f1724;
+}
+.eb-card h2 { margin:0 0 8px 0; }
+.eb-card summary { cursor:pointer; color: var(--primary); }

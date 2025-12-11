@@ -1,0 +1,3 @@
+.about { padding:2rem 0; }
+.about-inner { background:white; padding:1rem; border-radius:8px; box-shadow:var(--shadow-soft); }
+.about-inner ul { margin:0.5rem 0 0 1.2rem; }

@@ -1,0 +1,4 @@
+.gallery { padding:2rem 0; }
+.gallery-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; }
+.gallery-item { background:#f3f4f6; border-radius:8px; padding:2rem; text-align:center; box-shadow:var(--shadow-soft); }
+@media (max-width:900px){ .gallery-grid { grid-template-columns: 1fr; } }

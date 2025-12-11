@@ -1,0 +1,3 @@
+.notices { padding:2rem 0; }
+.notice-list { display:flex; flex-direction:column; gap:.75rem; margin-top:1rem; }
+.notice-item { background:white; padding:.85rem; border-radius:8px; box-shadow:var(--shadow-soft); display:flex; justify-content:space-between; }

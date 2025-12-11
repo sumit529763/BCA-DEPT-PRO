@@ -1,0 +1,4 @@
+.faculty { padding:2rem 0; }
+.faculty-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:1rem; }
+.faculty-card { background:white; padding:1rem; border-radius:8px; box-shadow:var(--shadow-soft); }
+@media (max-width:900px){ .faculty-grid { grid-template-columns: 1fr; } }
