@@ -11,8 +11,6 @@ dist/
 dist-ssr/
 *.local
 
-# preview folder we used for local GH Pages preview
-preview_root/
 
 # Logs
 logs/

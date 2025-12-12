@@ -1,10 +1,12 @@
+// src/components/UI/SectionTitle.jsx
 import React from "react";
+import "./SectionTitle.css"; // <-- Import CSS
 
 export default function SectionTitle({ title, subtitle }) {
   return (
-    <div style={{marginBottom:12}}>
-      <h2 style={{margin:"0 0 6px"}}>{title}</h2>
-      {subtitle && <p style={{margin:0, color:"#465a7a"}}>{subtitle}</p>}
+    <div className="section-title-wrapper">
+      <h2>{title}</h2>
+      {subtitle && <p>{subtitle}</p>}
     </div>
   );
 }

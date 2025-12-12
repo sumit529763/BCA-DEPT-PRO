@@ -1,14 +1,15 @@
-// vite.config.js
+// vite.config.js (Set base back to root for Firebase Hosting)
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig(({ command }) => {
-  const isDev = command === 'serve';
+  const isProd = command === 'build';
+  
   return {
-    // Set base to the domain root
+    // 🔥 CHANGE THIS BACK TO ABSOLUTE ROOT '/'
+    // Since bca-dept-pro.web.app is a root deployment, this is correct.
     base: '/', 
 
-    // Remove the complex include option
     plugins: [react()], 
   };
 });

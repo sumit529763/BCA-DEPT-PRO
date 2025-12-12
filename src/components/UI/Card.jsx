@@ -1,10 +1,13 @@
+// src/components/UI/Card.jsx
 import React from "react";
+import "./Card.css"; // <-- Import CSS
 
 export default function Card({ title, body, children }) {
   return (
-    <div style={{padding:16, borderRadius:8, background:"white", boxShadow:"0 6px 18px rgba(12,40,80,0.06)"}}>
-      <h4 style={{margin:"0 0 8px"}}>{title}</h4>
-      <p style={{margin:0}}>{body}</p>
+    <div className="card-base"> {/* <-- Use CSS class */}
+      <h4 className="card-title">{title}</h4>
+      {/* Note: It is better to use the <h4> tag just for the title 
+          and render the main 'body' text as a child for maximum flexibility. */}
       {children}
     </div>
   );

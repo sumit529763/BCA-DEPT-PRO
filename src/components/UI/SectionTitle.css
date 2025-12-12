@@ -1,0 +1,13 @@
+/* src/components/UI/SectionTitle.css */
+.section-title-wrapper {
+  margin-bottom: 12px;
+}
+.section-title-wrapper h2 {
+  margin: 0 0 6px;
+  /* Define H2 style here */
+}
+.section-title-wrapper p {
+  margin: 0;
+  color: var(--muted); /* Use global variable for muted text */
+  /* Define subtitle style here */
+}

@@ -1,5 +1,6 @@
 // src/components/Footer/Footer.jsx
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Footer.css";
 
 export default function Footer() {
@@ -10,25 +11,34 @@ export default function Footer() {
         <div className="footer-column">
           <h3 className="footer-heading">About GIET</h3>
           <p className="footer-text">
-            GIET University, Gunupur is a premier institute offering diverse undergraduate and
-            postgraduate programmes with a focus on quality education and research.
+            GIET University, Gunupur is a premier institute offering diverse
+            undergraduate and postgraduate programmes with a focus on quality
+            education and research.
           </p>
         </div>
 
         <div className="footer-column">
           <h3 className="footer-heading">About CSA</h3>
           <p className="footer-text">
-            The CSA Department aims to build competent professionals with strong foundations
-            in computer science, practical skills, and ethical values.
+            The CSA Department aims to build competent professionals with strong
+            foundations in computer science, practical skills, and ethical
+            values.
           </p>
         </div>
 
         <div className="footer-column">
           <h3 className="footer-heading">Alumni &amp; Academic</h3>
           <ul className="footer-links">
-            <li><a href="/alumni">Alumni</a></li>
-            <li><a href="/academic-calendar">Academic Calendar</a></li>
-            <li><a href="/placements">Placement Cell</a></li>
+            <li>
+              <NavLink to="/alumni">Alumni</NavLink>
+            </li>
+            {/* If academic-calendar is a separate page */}
+            <li>
+              <NavLink to="/academic-calendar">Academic Calendar</NavLink>
+            </li>
+            <li>
+              <NavLink to="/placements">Placement Cell</NavLink>
+            </li>
           </ul>
         </div>
 

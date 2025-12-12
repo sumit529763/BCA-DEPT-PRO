@@ -1,11 +1,21 @@
-.eb-wrapper { padding: 28px; display:flex; justify-content:center; }
-.eb-card {
-  background: white;
-  border-radius: 10px;
-  padding: 18px;
-  max-width: 760px;
-  box-shadow: 0 10px 30px rgba(2,6,23,0.08);
-  color: #0f1724;
+/* src/components/ErrorBoundary/ErrorBoundary.css */
+.error-fallback {
+    padding: 24px;
+    background: #fef2f2; /* Light red background */
+    border: 1px solid #f87171; /* Red border */
+    border-radius: 8px;
+    margin: 20px;
 }
-.eb-card h2 { margin:0 0 8px 0; }
-.eb-card summary { cursor:pointer; color: var(--primary); }
+
+.error-details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #b91c1c; /* Darker red text */
+}
+
+.error-details div {
+    padding: 8px 0;
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #444;
+}
