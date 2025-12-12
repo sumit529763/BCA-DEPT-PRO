@@ -5,7 +5,10 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ command }) => {
   const isDev = command === 'serve';
   return {
-    base: isDev ? '/' : '/BCA-DEPT-PRO/',   // <-- dev: '/', build: '/BCA-DEPT-PRO/'
-    plugins: [react()],
+    // Set base to the domain root
+    base: '/', 
+
+    // Remove the complex include option
+    plugins: [react()], 
   };
 });

@@ -3,8 +3,9 @@ import "./Placement.css";
 
 export default function Placement() {
   const placements = [
-    { student: "Alice", company: "TechCorp", year: "20XX" },
-    { student: "Bob", company: "SoftWorks", year: "20XX" },
+    { student: "Sumit Naik", company: "TechCorp", year: "2022" },
+    { student: "Suprabhat Pradhan", company: "SoftWorks", year: "2022" },
+    { student: "Sahil ku. Panda", company: "SoftWorks", year: "2024" },
   ];
 
   return (
